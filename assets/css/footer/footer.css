@@ -1,0 +1,110 @@
+footer{
+    background: #0c0b0b;
+    padding: 40px 0;
+}
+.contacto{
+    width: 80%;
+    margin: 0 auto;
+}
+.contacto__contenido{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 30px;
+}
+.contacto__presentacion{
+    width: calc(100vw / 3);
+    display: block;
+}
+.contacto__logo{
+    width: 150px;
+    height: 50px;
+    background: url("../../img/AC.png") no-repeat center / cover;
+    padding-top: 20px;
+}
+.contacto__descripcion{
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+    padding-top: 10px;
+    opacity: 0.8;
+}
+.contacto__informacion{
+    width: calc(100vw / 3);
+}
+.contacto__service{
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+    padding-top: 10px;
+}
+.contacto__pais__info{
+    padding-top: 10px;
+    display: flex;
+}
+.contacto__pais{
+    width: 20px;
+    height: 20px;
+    background: url("../../img/footer/Colombia.png") no-repeat center / cover;
+    border-radius: 50%;
+    margin: 10px 5px 0 0;
+}
+.contacto__ciudad{
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+    padding-top: 10px;
+    opacity: 0.8;
+}
+.contacto__numero{
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+    padding-top: 10px;
+    opacity: 0.8;
+}
+.contacto__correo{
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+    padding-top: 10px;
+    opacity: 0.8;
+}
+.contacto__redes{
+    width: calc(100vw / 3);
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+}
+.derechos{
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 952px) {}
+
+@media screen and (max-width: 858px) {
+    .contacto__contenido{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto__presentacion {
+        width: calc(80vw / 1);
+    }
+    .contacto__informacion{
+        width: calc(80vw / 1);
+    }
+    .contacto__redes{
+        width: calc(80vw / 1);
+        margin: 0 auto;;
+    }
+}

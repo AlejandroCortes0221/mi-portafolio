@@ -1,0 +1,96 @@
+.hobbies {
+    background: #0f0f0f;
+    padding: 40px 0;
+}
+
+.hobbies__contenido {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hobbies__titulo {
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(to right, #0468ff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hobbies__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hobbies__item {
+    width: calc(100vw / 6);
+    height: 350px;
+    border-radius: 5px;
+    transition: .3s;
+    margin-top: 20px;
+}
+
+.hobbies__item:hover {
+    transform: translateY(-10px);
+}
+
+.hobbies__imagen {
+    width: calc(100vw / 6);
+    height: 300px;
+}
+
+.hobbies__item:nth-child(1) {
+    background: url("../../img/hobbies/futbol.jpg") no-repeat center / cover;
+}
+.hobbies__item:nth-child(2) {
+    overflow: visible;
+    background: url("../../img/hobbies/musica.jpg") no-repeat center / 100% 100%;
+}
+.hobbies__item:nth-child(3) {
+    background: url("../../img/hobbies/programar.jpg") no-repeat center / 100% 100%;
+}
+.hobbies__item:nth-child(4) {
+    background: url("../../img/hobbies/series.jpg") no-repeat center / 100% 100%;
+}
+.hobbies__item:nth-child(5) {
+    background: url("../../img/hobbies/video_juegos.webp") no-repeat center / 100% 100%;
+}
+.hobbies__item:nth-child(6) {
+    background: url("../../img/hobbies/cocinar.jpg") no-repeat center / 100% 100%;
+}
+
+
+.hobbies__descripcion {
+    width: calc(100vw / 6);
+    height: 50px;
+    background: #000000;
+}
+
+.hobbies__texto {
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+@media screen and (max-width: 952px) {}
+
+@media screen and (max-width: 858px) {
+    .hobbies__item{
+        width: calc(80vw / 1);
+    }
+    .hobbies__imagen {
+        width: calc(80vw / 1);
+    }
+    .hobbies__descripcion{
+        width: calc(80vw / 1);
+    }
+    .hobbies__lista {
+        flex-direction: column;
+    }
+}

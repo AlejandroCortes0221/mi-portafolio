@@ -1,0 +1,97 @@
+.proyects {
+    background: #0f0f0f;
+    padding: 40px 0;
+}
+
+.proyects__contenido {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.proyects__titulo {
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(to right, #0468ff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.proyects__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.proyects__item {
+    width: calc(100vw / 4);
+    height: 400px;
+    border-radius: 5px;
+    transition: .3s;
+    margin-top: 20px;
+}
+
+.proyects__item:hover {
+    transform: translateY(-10px);
+}
+
+.proyects__imagen {
+    width: calc(100vw / 4);
+    height: 350px;
+}
+
+.proyects__item:nth-child(1) {
+    background: url("../../img/proyects/Encriptador.png") no-repeat center / 100% 100%;
+}
+.proyects__item:nth-child(2) {
+    background: url("../../img/proyects/Ahorcado.png") no-repeat center / 100% 100%;
+}
+.proyects__item:nth-child(3) {
+    background: url("../../img/proyects/Geek.png") no-repeat center / 100% 100%;
+}
+.proyects__item:nth-child(4) {
+    background: url("../../img/proyects/Portafolio.png") no-repeat center / 100% 100%;
+}
+
+
+.proyects__descripcion {
+    width: calc(100vw / 4);
+    height: 50px;
+    background: #000000;
+}
+
+.proyects__texto {
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+@media screen and (max-width: 952px) {}
+
+@media screen and (max-width: 767px) {
+    .proyects__item {
+        width: calc(80vw / 1);
+    }
+
+    .proyects__imagen {
+        width: calc(80vw / 1);
+        height: 350px;
+    }
+    .proyects__descripcion {
+        width: calc(80vw / 1);
+        height: 50px;
+        background: #000000;
+    }
+    .proyects__lista {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,61 @@
+.aboutMe{
+    width: 100%;
+    padding: 40px 0;
+    background: #0f0f0f;
+}
+.about__contenido{
+    width: 80%;
+    margin: 0 auto;
+}
+.about__titulo{
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(to right ,#0468ff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.about__parrafo{
+    font-size: 20px;
+    font-family: cursive;
+    color: #dfcbcb;
+    line-height: 25px;
+}
+.about__lista{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.about__item{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    padding-right: 20px;
+}
+.about__nombre{
+    font-size: 20px;
+    background: linear-gradient(to right ,#0468ff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.about__link{
+    width: 40px;
+    margin: 0 auto;
+}
+.about__link img{
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+}
+.about__link img:hover{
+    opacity: 1;
+}
+@media screen and (max-width: 952px) {}
+
+@media screen and (max-width: 858px) {
+    .about__nombre{
+        font-size: 14px;
+    }
+}

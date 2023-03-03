@@ -1,0 +1,104 @@
+.skills{
+    background: #0c0b0b;
+    padding: 40px 0;
+}
+.skills__contenido{
+    width: 80%;
+    margin: 0 auto;
+}
+.skills__titulo{
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(to right ,#0468ff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.skills__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skills__item{
+    width: calc(100vw / 6);
+    height: 350px;
+    border-radius: 5px;
+    transition: .3s;
+    margin-top: 20px;
+}
+#one{
+    background: #ff9408;
+}
+#two{
+    background: #f9fd0c;
+}
+#three {
+    background: #3d0388;
+}
+#four {
+    background: #f72626;
+}
+#five {
+    background: #5e26f7;
+}
+#six {
+    background: #2668f7;
+}
+.skills__item:hover {
+   transform: translateY(-10px);
+}
+.item__imagen{
+    width: calc(100vw / 6);
+    height: 300px;
+}
+#html{
+    background: url("../../img/logos/html.png") no-repeat center / contain;
+}
+#javascript{
+    background: url("../../img/logos/js.png") no-repeat center / contain;
+}
+#php {
+    background: url("../../img/logos/php.png") no-repeat center / contain;
+}
+#java {
+    background: url("../../img/logos/java.png") no-repeat center / contain;
+}
+#boostrap {
+    background: url("../../img/logos/boostrap.png") no-repeat center / contain;
+}
+#css {
+    background: url("../../img/logos/css.png") no-repeat center / contain;
+}
+.item__descripcion{
+    width: calc(100vw / 6);
+    height: 50px; 
+    background: #000000;
+}
+.descripcion__texto{
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 952px) {}
+
+@media screen and (max-width: 858px) {
+    .skills__lista{
+        flex-direction: column;
+    }
+    .skills__item{
+        width: calc(80vw / 1);
+    }
+    .item__imagen{
+        width: calc(80vw / 1);
+    }
+    .item__descripcion{
+        width: calc(80vw / 1);
+    }
+}
