@@ -96,7 +96,7 @@
     .lista__devuelta{
         left: -100%;
     }
-    #check:checked ~ html{
+    #check:checked ~ * body{
         overflow-y: hidden;
     }
 
